@@ -9,6 +9,6 @@ try {
     $menu->showMenu();
     $menu->showInput();
 } catch (\Exception $e) {
-    $climate->red($e);
+    $climate->red($e->getMessage());
     exit(1);
 }
